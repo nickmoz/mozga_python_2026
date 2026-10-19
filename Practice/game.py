@@ -1,6 +1,7 @@
 # Create a game where a user must keep entering a doors until they reach the exit.
 # They have 3 doors, one is safe and two are traps.
 # They have 2 lives to get through 3 doors.
+# Practice Game
 import random
 print("Welcome to the door game!")
 
