@@ -3,56 +3,56 @@
 import random
 
 
-# def create_display_from_secret(secret, correct):
-#     display = secret[0]
-#     for i in range(1, len(secret)-1):
-#         if secret[i] in correct:
-#             display = display + secret[i]
-#         else:
-#             display = display + '_'
-#     display = display + secret[-1]
-#     return display
+def create_display_from_secret(secret, correct):
+    display = secret[0]
+    for i in range(1, len(secret)-1):
+        if secret[i] in correct:
+            display = display + secret[i]
+        else:
+            display = display + '_'
+    display = display + secret[-1]
+    return display
 
 
-# words = ['programming', 'debugging',
-#          'inheritance', 'polymorphism', 'composition']
+words = ['programming', 'debugging',
+         'inheritance', 'polymorphism', 'composition']
 
-# last = len(words) - 1
-# r = random.randint(0, last)
-# secret = words[r]
+last = len(words) - 1
+r = random.randint(0, last)
+secret = words[r]
 
-# wrong = []
-# correct = []
+wrong = []
+correct = []
 
-# display = create_display_from_secret(secret, correct)
+display = create_display_from_secret(secret, correct)
 
-# while True:
-#     print(display)
+while True:
+    print(display)
 
-#     guess = input("Guess a letter: ")
+    guess = input("Guess a letter: ")
 
-#     if len(guess) > 1:
-#         print("Enter one letter only.")
-#         continue
+    if len(guess) > 1:
+        print("Enter one letter only.")
+        continue
 
-#     if guess in secret:
-#         if guess not in correct:
-#             correct.append(guess)
-#     else:
-#         if guess not in wrong:
-#             wrong.append(guess)
+    if guess in secret:
+        if guess not in correct:
+            correct.append(guess)
+    else:
+        if guess not in wrong:
+            wrong.append(guess)
 
-#     display = create_display_from_secret(secret, correct)
+    display = create_display_from_secret(secret, correct)
 
-#     if display == secret:
-#         print("Found")
-#         break
+    if display == secret:
+        print("Found")
+        break
 
-#     if len(wrong) == 6:
-#         print("You are hanged")
-#         break
+    if len(wrong) == 6:
+        print("You are hanged")
+        break
 
-# print("GAME OVER")
+print("GAME OVER")
 
 
 # Tic Tac Toe
