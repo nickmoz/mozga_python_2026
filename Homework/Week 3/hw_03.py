@@ -1,4 +1,4 @@
-# Write a function which count number of lines and number of words in a text.
+# Write a new function which count number of lines and number of words in a text.
 # The text should be retrieved from a file. (Hint 1: read all lines and count them.
 # Hint 2: For each line split with the white space as delimiter and count parts).
 

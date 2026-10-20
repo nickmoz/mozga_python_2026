@@ -1,5 +1,5 @@
 # Rebuild the Hangman game as a class. The class will include a method for each task.
-import random
+# Make the load random word method retrieve a word from an API: https://random-word-api.herokuapp.com/word
 import requests
 
 
@@ -71,6 +71,4 @@ class Hangman:
 game = Hangman()
 game.play()
 
-# AI Disclaimer: This code was generated with the help of AI.
-
-# Make the load random word method retrieve a word from an API: https://random-word-api.herokuapp.com/word
+# AI Disclaimer: This code was generated with some help from AI.

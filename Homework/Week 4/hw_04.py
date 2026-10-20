@@ -1,4 +1,4 @@
-# Tic Tac Toe
+# Tic Tac Toe Game
 def display_board(board):
     for r in range(0, 3):
         for c in range(0, 3):

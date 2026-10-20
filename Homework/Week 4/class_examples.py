@@ -1,4 +1,4 @@
-# In Class Examples:
+# Class Examples:
 # Hangman Game
 import random
 
