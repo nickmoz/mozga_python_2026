@@ -1,15 +1,21 @@
 # Rebuild the Hangman game as a class. The class will include a method for each task.
 import random
+import requests
 
 
 class Hangman:
 
     def __init__(self):
-        self.words = ["python", "java", "coding", "classes"]
-        self.secret = random.choice(self.words)
+        self.secret = self.random_word()
         self.wrong = []
         self.correct = []
         self.display = self.create_display_from_secret()
+
+    def random_word(self):
+        response = requests.get("https://random-word-api.herokuapp.com/word")
+        data = response.json()
+        word = data[0]
+        return word
 
     def create_display_from_secret(self):
         display = self.secret[0]
@@ -66,3 +72,5 @@ game = Hangman()
 game.play()
 
 # AI Disclaimer: This code was generated with the help of AI.
+
+# Make the load random word method retrieve a word from an API: https://random-word-api.herokuapp.com/word
