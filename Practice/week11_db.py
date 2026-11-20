@@ -1,7 +1,7 @@
 import sqlite3
 
 # connect to the database
-db = sqlite3.connect("school.db")
+db = sqlite3.connect("database.db")
 cursor = db.cursor()
 
 # create a students table
